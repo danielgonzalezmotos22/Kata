@@ -1,6 +1,7 @@
 def calcular(numeros: str) -> int:
     if not numeros:
         return 0
+    numeros = numeros.replace('\n', ',')
     numeros = [int(n) for n in numeros.split(',')]
     return sum(numeros)
 

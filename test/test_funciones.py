@@ -9,3 +9,6 @@ def test_1():
 def test_suma_varios():
     assert calcular('1,2') == 3 
     assert calcular('1,2,3') == 6
+
+def test_salto_de_linea():
+    assert calcular('1\n2,3') == 6
